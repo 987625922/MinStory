@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wind.minstory">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ContentActivity" />
+        <activity android:name=".AttentionActivity2" />
+        <activity android:name=".PersonActivity" />
+        <activity android:name=".UserAttentionActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".DownloadActivity" />
+        <activity android:name=".GameActivity"></activity>
+        <activity android:name=".BrowseLogActivity"></activity>
+        <activity android:name=".LocalStoryActivity"></activity>
+        <activity android:name=".AboutActivity"/>
+
+    </application>
+
+</manifest>

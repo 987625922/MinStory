@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Progress">
+        <attr name="progress" format="integer" />
+        <attr name="progress_color" format="color" />
+        <attr name="background_color" format="color" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="background_stroke_width" format="dimension" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="integer" />
+
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <!--虚线控件的属性-->
+    <declare-styleable name="DashLineView">
+        <attr name="dlv_dashWidth" format="dimension" />
+        <attr name="dlv_dashColor" format="reference" />
+        <attr name="dlv_width" format="dimension" />
+        <attr name="dlv_orientation" format="integer" />
+    </declare-styleable>
+    <!-- 自定义进度条-->
+    <declare-styleable name="LineGressBar">
+    <attr name="lgb_painWidth" format="integer"/>
+    <attr name="lgb_percentage" format="integer"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分类"
+            android:id="@+id/attention_title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:layout_alignTop="@+id/back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/attention"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:id="@+id/attention"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/refresh_color_4"></LinearLayout>
+
+
+            <com.example.wind.minstory.base.RefreshAndLoadMoreView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rl_attention"
+                >
+                <com.example.wind.minstory.base.LoadMoreListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/attention_list"
+                    android:clipToPadding="false"
+                    android:divider="#e5e5e5"
+                    android:dividerHeight="5dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:padding="5dp"
+                    android:background="#e5e5e5"
+                    >
+                </com.example.wind.minstory.base.LoadMoreListView>
+
+            </com.example.wind.minstory.base.RefreshAndLoadMoreView>
+
+</LinearLayout>
